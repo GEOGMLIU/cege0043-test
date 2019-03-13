@@ -3,7 +3,11 @@ function startDataUpload() {
 	var name = document.getElementById("name").value;
 	var surname = document.getElementById("surname").value;
 	var moduletitle = document.getElementById("moduletitle").value;
-	var postString = "name="+ name +"&surname="+surname+"&moduletitle="+moduletitle;
+	var latitude = document.getElementById("latitude").value;
+	var longitude = document.getElementById("longitude").value;
+	var postString = "name="+ name +"&surname="+surname+"&moduletitle="+moduletitle
+	+"&latitude="+ latitude+"&longitude="+longitude;
+	
 	// now get the checkbox values - separate them with a | so that they can be
 	// split later on if necessary
 	var checkString = "";
